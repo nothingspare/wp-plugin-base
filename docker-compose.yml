@@ -31,5 +31,8 @@ services:
       - "$WP_PORT:80"
     volumes:
       - "./plugin:/var/www/html/wp-content/plugins/$PLUGIN_NAME"
+      - "wordpress_content:/var/www/html/wp-content/plugins"
       - "./wp-config.php:/var/www/html/wp-config.php"
     restart: $RESTART
+volumes:
+  wordpress_content:
