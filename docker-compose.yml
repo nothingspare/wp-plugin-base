@@ -32,6 +32,7 @@ services:
     volumes:
       - "./plugin:/var/www/html/wp-content/plugins/$PLUGIN_NAME"
       - "wordpress_content:/var/www/html/wp-content/plugins"
+      - "./configs.ini:/usr/local/etc/php/conf.d/configs.ini"
       - "./wp-config.php:/var/www/html/wp-config.php"
     restart: $RESTART
 volumes:
