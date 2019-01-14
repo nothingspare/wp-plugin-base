@@ -1,0 +1,12 @@
+<?php
+add_action('plugins_loaded', '<% PLUGIN_NAME %>_options_page', 50);
+function oakridge_users_options_page() {
+  acf_add_options_page([
+    'page_title' => '<% PLUGIN_NAME %>',
+    'menu_title' => '<% PLUGIN_NAME %>',
+    'menu_slug' => '<% PLUGIN_NAME %>',
+    'capability' => 'administrator',
+    'redirect' => false
+  ]);
+}
+
