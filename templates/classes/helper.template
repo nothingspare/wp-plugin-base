@@ -1,0 +1,8 @@
+<?php
+/**
+ **
+ */
+class <% PLUGIN_NAME %>_helper {
+  private $options = false;
+  /* get_options */
+}
